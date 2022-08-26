@@ -7,10 +7,10 @@ Data scientists are expected to forecast the future based on patterns; he or she
 ## Roles of Data scientist
 ![Data scientist skilss](/docs/assets/img/Data_scientist_skills.png)
 
-• Research and develop statistical models for analysis 
-• Collaborate with product management and engineering departments to better understand company needs and devise possible solutions
-• Communicate results and statistical concepts to key business leaders 
-• Use appropriate databases and project designs to optimize joint development efforts 
-• Create processes and tools to aid in the monitoring and analysis of performance and data accuracy. 
-• Apply predictive modeling to improve and optimize customer experiences, revenue generation, ad targeting, and other areas. 
-• Create an A/B testing framework for the company and test model quality.
+* Research and develop statistical models for analysis 
+* Collaborate with product management and engineering departments to better understand company needs and devise possible solutions
+* Communicate results and statistical concepts to key business leaders 
+* Use appropriate databases and project designs to optimize joint development efforts 
+* Create processes and tools to aid in the monitoring and analysis of performance and data accuracy. 
+* Apply predictive modeling to improve and optimize customer experiences, revenue generation, ad targeting, and other areas. 
+* Create an A/B testing framework for the company and test model quality.
