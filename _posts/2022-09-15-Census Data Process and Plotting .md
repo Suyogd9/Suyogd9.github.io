@@ -19,3 +19,9 @@ In terms of technology,  I learned how to work with tidyverse library and use `s
 I was able to draw some inferences about the data using customized plot functions by plotting variances in population and year for a specific division or state. For instance, I saw a dramatic decline in the enrollment mean for the Mid-Atlantic division and decided to investigate more to learn more about the unexpected drop. 
 
 [Project 1 HTML file with details and plots](https://suyogd9.github.io/Project_1_sdharma2.html)
+
+# What you would do differently?
+
+I believe there were numerous approaches we could have taken to read and process the data from the csv file. There were other variables that we eliminated before plotting and visualizing it. We could have pruned the significant variable before analyzing it. We could have divided some of the functions into shorter functions, giving the project more flexibility. We could have set a goal from the start, such as finding a state with an unpredictable spike in enrollment value, and given ourselves some flexibility to move in that direction.
+
+Thank you for reading!
