@@ -18,3 +18,4 @@ In terms of technology,  I learned how to work with tidyverse library and use `s
 
 I was able to draw some inferences about the data using customized plot functions by plotting variances in population and year for a specific division or state. For instance, I saw a dramatic decline in the enrollment mean for the Mid-Atlantic division and decided to investigate more to learn more about the unexpected drop. 
 
+[Project 1 HTML file with details and plots](https://suyogd9.github.io/Project_1_sdharma2.html)
