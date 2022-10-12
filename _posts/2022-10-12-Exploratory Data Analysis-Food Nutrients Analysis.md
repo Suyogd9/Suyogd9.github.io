@@ -19,7 +19,7 @@ Some of the interesting findings were as follows:-
   
   - After plotting scatter plot for proteins vs carohydrates, we could see that there is **no real pattern** to be observed here. A few points may indicate increase in either one is an increase in the other but over all protein stays low no matter how the carbohydrates varies. 
   
-## Most difficult part of the logic and programming..
+## Most difficult part of the logic and programming.
 
 In this project, we were required to select one API from a list of **5** APIs. As a food enthusiast, my first choice was unquestionably a food API. However, when I 
 attempted to explore the API, I discovered that it was a very complex API with **lists of lists** being returned for certain API calls. It was extremely difficult to
