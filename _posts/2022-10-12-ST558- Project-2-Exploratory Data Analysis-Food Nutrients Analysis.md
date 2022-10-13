@@ -1,4 +1,4 @@
-# Exploratory Data Analysis - Food Nutrients Analysis
+# ST558-Project-2-Exploratory Data Analysis-Food Nutrients Analysis
 
 ![Food API Analysis](/docs/assets/img/food-API.jpg)
 
