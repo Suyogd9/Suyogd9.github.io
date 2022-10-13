@@ -6,19 +6,21 @@
 
 Our goal with this project was to create a **vignette** about contacting an Food API using functions we have created to 
 query, parse, and return well-structured data. We then usef our functions to obtain data from the API and do some exploratory data analysis. This was a group project
-and I worked on this project with **Magaritte Nguyen**. We retrievef data from an [API](https://spoonacular.com/food-api/docs). 
+and I worked on this project with **Magaritte Nguyen**. We retrieved data from an [API](https://spoonacular.com/food-api/docs). 
 
-To demonstrate, we will be interacting with the Spoonacular Recipe and Food API. We are going to to build a few functions to interact with some of the endpoints and explore some of the data that we can retrieve for the Spoonacular API. To use a function that connects with `complexSearch` end point of the API. It returns a list of lists containing recipe names that include certain restrictions, the user may either enter the type of cuisine, Recipes with a specific ingredient, number of recipes to get based on cuisine and ingredient provided, type of diet and protein range.Our function can retrieve the data for multiple cuisines specified by the user. There is another function which can be used by the user to contact other endpoint of the API `findByNutrients` to get all the recipes based on carbohydrate content. After, receiving the data we performed **data cleaning** in which we converted the data into usable format and performed **data analysis** on this modified data. We the **visualized** the data to understand the relationship between two variables or parameters of the data.
+We will use a function that connects with `complexSearch`, which is an end point of the API search. It returns a list of lists containing recipe names and other variables of interest that have default values or can be user defined. The user may either enter the type of cuisine, recipes with a specific ingredient, number of recipes to output based on modifications provided, type of diet, and protein range. We have another function that can retrieve the data for multiple cuisines specified by the user as well. We have a third function which can also be used to contact other endpoint of the API, `findByNutrients` to get all the recipes based on carbohydrate content. After, receiving the data we performed **data cleaning** in which we converted the data into usable format and performed **data analysis** on this modified data. We the **visualized** the data to understand the relationship between two variables or parameters of the data.
 
-Some of the interesting findings were as follows:-
-  - The **American cuisine** has **highest number** of recipes with all the ingredients and protein range between 10-100. 
-  
-  - Our hypothesis was that Vegetarian recipes will have less protein but looking at protein content in vegetarian and non vegetarian recipes, but protein is **not non-existent** in vegetarian meals.
-  
-  - From the plot, interestingly enough, when broken down by serving, the protein content in vegetarian meals (for some) have a **higher protein content** then the non vegetarian meals.
-  
-  - After plotting scatter plot for proteins vs carohydrates, we could see that there is **no real pattern** to be observed here. A few points may indicate increase in either one is an increase in the other but over all protein stays low no matter how the carbohydrates varies. 
-  
+Some interesting findings for our specific vingette examples:
+- Some vegetarian recipes are vegan as well
+- Most of the unhealthy food recipes are from the **Foodista** source
+- Recipes suggested by **Foodista** has the **maximum number** of **expensive** recipes, but also suggests **maximum number** of **inexpensive** recipes
+- **Cinnamon French Toast Sticks** has a higher protein content than a non vegetarian meals like the **Turkey Burgers with Slaw**, even though it is a vegetarian recipe. This is surprising, but also makes sense due to the high protein content in eggs
+- It can be seen that the number of **American** cuisine recipes are much **higher** in comparison to **Chinese** and **Latin American** cuisines for our vignette for the recipes containing fruit.
+- The protein content in non vegetarian meals in generally much greater than the protein content in vegetarian meals as expected
+- When broken down by serving, the protein content in vegetarian meals (for some) have a higher protein content then the non vegetarian meals
+- There is **no real pattern** to be observed between carbohydrates and protein
+- The regression line basically has **No change** in protein (g) at any amount of carbohydrates, confirming out plot that is only a scattet plot between protein and carbohydrates
+
 ## Most difficult part of the logic and programming.
 
 In this project, we were required to select one API from a list of **5** APIs. As a food enthusiast, my first choice was unquestionably a food API. However, when I 
