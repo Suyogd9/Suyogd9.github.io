@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style type="text/css">
+@font-face {
+font-family: octicons-link;
+src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+body {
+-webkit-text-size-adjust: 100%;
+text-size-adjust: 100%;
+color: #333;
+font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+font-size: 16px;
+line-height: 1.6;
+word-wrap: break-word;
+}
+a {
+background-color: transparent;
+}
+a:active,
+a:hover {
+outline: 0;
+}
+strong {
+font-weight: bold;
+}
+h1 {
+font-size: 2em;
+margin: 0.67em 0;
+}
+img {
+border: 0;
+}
+hr {
+box-sizing: content-box;
+height: 0;
+}
+pre {
+overflow: auto;
+}
+code,
+kbd,
+pre {
+font-family: monospace, monospace;
+font-size: 1em;
+}
+input {
+color: inherit;
+font: inherit;
+margin: 0;
+}
+html input[disabled] {
+cursor: default;
+}
+input {
+line-height: normal;
+}
+input[type="checkbox"] {
+box-sizing: border-box;
+padding: 0;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+td,
+th {
+padding: 0;
+}
+* {
+box-sizing: border-box;
+}
+input {
+font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+a {
+color: #4078c0;
+text-decoration: none;
+}
+a:hover,
+a:active {
+text-decoration: underline;
+}
+hr {
+height: 0;
+margin: 15px 0;
+overflow: hidden;
+background: transparent;
+border: 0;
+border-bottom: 1px solid #ddd;
+}
+hr:before {
+display: table;
+content: "";
+}
+hr:after {
+display: table;
+clear: both;
+content: "";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+margin-top: 15px;
+margin-bottom: 15px;
+line-height: 1.1;
+}
+h1 {
+font-size: 30px;
+}
+h2 {
+font-size: 21px;
+}
+h3 {
+font-size: 16px;
+}
+h4 {
+font-size: 14px;
+}
+h5 {
+font-size: 12px;
+}
+h6 {
+font-size: 11px;
+}
+blockquote {
+margin: 0;
+}
+ul,
+ol {
+padding: 0;
+margin-top: 0;
+margin-bottom: 0;
+}
+ol ol,
+ul ol {
+list-style-type: lower-roman;
+}
+ul ul ol,
+ul ol ol,
+ol ul ol,
+ol ol ol {
+list-style-type: lower-alpha;
+}
+dd {
+margin-left: 0;
+}
+code {
+font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+font-size: 12px;
+}
+pre {
+margin-top: 0;
+margin-bottom: 0;
+font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+.select::-ms-expand {
+opacity: 0;
+}
+.octicon {
+font: normal normal normal 16px/1 octicons-link;
+display: inline-block;
+text-decoration: none;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+.octicon-link:before {
+content: '\f05c';
+}
+.markdown-body:before {
+display: table;
+content: "";
+}
+.markdown-body:after {
+display: table;
+clear: both;
+content: "";
+}
+.markdown-body>*:first-child {
+margin-top: 0 !important;
+}
+.markdown-body>*:last-child {
+margin-bottom: 0 !important;
+}
+a:not([href]) {
+color: inherit;
+text-decoration: none;
+}
+.anchor {
+display: inline-block;
+padding-right: 2px;
+margin-left: -18px;
+}
+.anchor:focus {
+outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+margin-top: 1em;
+margin-bottom: 16px;
+font-weight: bold;
+line-height: 1.4;
+}
+h1 .octicon-link,
+h2 .octicon-link,
+h3 .octicon-link,
+h4 .octicon-link,
+h5 .octicon-link,
+h6 .octicon-link {
+color: #000;
+vertical-align: middle;
+visibility: hidden;
+}
+h1:hover .anchor,
+h2:hover .anchor,
+h3:hover .anchor,
+h4:hover .anchor,
+h5:hover .anchor,
+h6:hover .anchor {
+text-decoration: none;
+}
+h1:hover .anchor .octicon-link,
+h2:hover .anchor .octicon-link,
+h3:hover .anchor .octicon-link,
+h4:hover .anchor .octicon-link,
+h5:hover .anchor .octicon-link,
+h6:hover .anchor .octicon-link {
+visibility: visible;
+}
+h1 {
+padding-bottom: 0.3em;
+font-size: 2.25em;
+line-height: 1.2;
+border-bottom: 1px solid #eee;
+}
+h1 .anchor {
+line-height: 1;
+}
+h2 {
+padding-bottom: 0.3em;
+font-size: 1.75em;
+line-height: 1.225;
+border-bottom: 1px solid #eee;
+}
+h2 .anchor {
+line-height: 1;
+}
+h3 {
+font-size: 1.5em;
+line-height: 1.43;
+}
+h3 .anchor {
+line-height: 1.2;
+}
+h4 {
+font-size: 1.25em;
+}
+h4 .anchor {
+line-height: 1.2;
+}
+h5 {
+font-size: 1em;
+}
+h5 .anchor {
+line-height: 1.1;
+}
+h6 {
+font-size: 1em;
+color: #777;
+}
+h6 .anchor {
+line-height: 1.1;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table,
+pre {
+margin-top: 0;
+margin-bottom: 16px;
+}
+hr {
+height: 4px;
+padding: 0;
+margin: 16px 0;
+background-color: #e7e7e7;
+border: 0 none;
+}
+ul,
+ol {
+padding-left: 2em;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+margin-top: 0;
+margin-bottom: 0;
+}
+li>p {
+margin-top: 16px;
+}
+dl {
+padding: 0;
+}
+dl dt {
+padding: 0;
+margin-top: 16px;
+font-size: 1em;
+font-style: italic;
+font-weight: bold;
+}
+dl dd {
+padding: 0 16px;
+margin-bottom: 16px;
+}
+blockquote {
+padding: 0 15px;
+color: #777;
+border-left: 4px solid #ddd;
+}
+blockquote>:first-child {
+margin-top: 0;
+}
+blockquote>:last-child {
+margin-bottom: 0;
+}
+table {
+display: block;
+width: 100%;
+overflow: auto;
+word-break: normal;
+word-break: keep-all;
+}
+table th {
+font-weight: bold;
+}
+table th,
+table td {
+padding: 6px 13px;
+border: 1px solid #ddd;
+}
+table tr {
+background-color: #fff;
+border-top: 1px solid #ccc;
+}
+table tr:nth-child(2n) {
+background-color: #f8f8f8;
+}
+img {
+max-width: 100%;
+box-sizing: content-box;
+background-color: #fff;
+}
+code {
+padding: 0;
+padding-top: 0.2em;
+padding-bottom: 0.2em;
+margin: 0;
+font-size: 85%;
+background-color: rgba(0,0,0,0.04);
+border-radius: 3px;
+}
+code:before,
+code:after {
+letter-spacing: -0.2em;
+content: "\00a0";
+}
+pre>code {
+padding: 0;
+margin: 0;
+font-size: 100%;
+word-break: normal;
+white-space: pre;
+background: transparent;
+border: 0;
+}
+.highlight {
+margin-bottom: 16px;
+}
+.highlight pre,
+pre {
+padding: 16px;
+overflow: auto;
+font-size: 85%;
+line-height: 1.45;
+background-color: #f7f7f7;
+border-radius: 3px;
+}
+.highlight pre {
+margin-bottom: 0;
+word-break: normal;
+}
+pre {
+word-wrap: normal;
+}
+pre code {
+display: inline;
+max-width: initial;
+padding: 0;
+margin: 0;
+overflow: initial;
+line-height: inherit;
+word-wrap: normal;
+background-color: transparent;
+border: 0;
+}
+pre code:before,
+pre code:after {
+content: normal;
+}
+kbd {
+display: inline-block;
+padding: 3px 5px;
+font-size: 11px;
+line-height: 10px;
+color: #555;
+vertical-align: middle;
+background-color: #fcfcfc;
+border: solid 1px #ccc;
+border-bottom-color: #bbb;
+border-radius: 3px;
+box-shadow: inset 0 -1px 0 #bbb;
+}
+.pl-c {
+color: #969896;
+}
+.pl-c1,
+.pl-s .pl-v {
+color: #0086b3;
+}
+.pl-e,
+.pl-en {
+color: #795da3;
+}
+.pl-s .pl-s1,
+.pl-smi {
+color: #333;
+}
+.pl-ent {
+color: #63a35c;
+}
+.pl-k {
+color: #a71d5d;
+}
+.pl-pds,
+.pl-s,
+.pl-s .pl-pse .pl-s1,
+.pl-sr,
+.pl-sr .pl-cce,
+.pl-sr .pl-sra,
+.pl-sr .pl-sre {
+color: #183691;
+}
+.pl-v {
+color: #ed6a43;
+}
+.pl-id {
+color: #b52a1d;
+}
+.pl-ii {
+background-color: #b52a1d;
+color: #f8f8f8;
+}
+.pl-sr .pl-cce {
+color: #63a35c;
+font-weight: bold;
+}
+.pl-ml {
+color: #693a17;
+}
+.pl-mh,
+.pl-mh .pl-en,
+.pl-ms {
+color: #1d3e81;
+font-weight: bold;
+}
+.pl-mq {
+color: #008080;
+}
+.pl-mi {
+color: #333;
+font-style: italic;
+}
+.pl-mb {
+color: #333;
+font-weight: bold;
+}
+.pl-md {
+background-color: #ffecec;
+color: #bd2c00;
+}
+.pl-mi1 {
+background-color: #eaffea;
+color: #55a532;
+}
+.pl-mdr {
+color: #795da3;
+font-weight: bold;
+}
+.pl-mo {
+color: #1d3e81;
+}
+kbd {
+display: inline-block;
+padding: 3px 5px;
+font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+line-height: 10px;
+color: #555;
+vertical-align: middle;
+background-color: #fcfcfc;
+border: solid 1px #ccc;
+border-bottom-color: #bbb;
+border-radius: 3px;
+box-shadow: inset 0 -1px 0 #bbb;
+}
+.task-list-item {
+list-style-type: none;
+}
+.task-list-item+.task-list-item {
+margin-top: 3px;
+}
+.task-list-item input {
+margin: 0 0.35em 0.25em -1.6em;
+vertical-align: middle;
+}
+:checked+.radio-label {
+z-index: 1;
+position: relative;
+border-color: #4078c0;
+}
+.sourceLine {
+display: inline-block;
+}
+code .kw { color: #000000; }
+code .dt { color: #ed6a43; }
+code .dv { color: #009999; }
+code .bn { color: #009999; }
+code .fl { color: #009999; }
+code .ch { color: #009999; }
+code .st { color: #183691; }
+code .co { color: #969896; }
+code .ot { color: #0086b3; }
+code .al { color: #a61717; }
+code .fu { color: #63a35c; }
+code .er { color: #a61717; background-color: #e3d2d2; }
+code .wa { color: #000000; }
+code .cn { color: #008080; }
+code .sc { color: #008080; }
+code .vs { color: #183691; }
+code .ss { color: #183691; }
+code .im { color: #000000; }
+code .va {color: #008080; }
+code .cf { color: #000000; }
+code .op { color: #000000; }
+code .bu { color: #000000; }
+code .ex { color: #000000; }
+code .pp { color: #999999; }
+code .at { color: #008080; }
+code .do { color: #969896; }
+code .an { color: #008080; }
+code .cv { color: #008080; }
+code .in { color: #008080; }
+</style>
+<style>
+body {
+  box-sizing: border-box;
+  min-width: 200px;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 45px;
+  padding-top: 0px;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<h1 id="project_2_c">Project_2_C</h1>
+<p>Suyog Dharmadhikari &amp; Magaritte Nguyen 12 October, 2022</p>
+<ul>
+<li><a href="#spoonacular-recipe-and-food-api-vignette" id="toc-spoonacular-recipe-and-food-api-vignette">Spoonacular Recipe and
+Food API Vignette</a></li>
+<li><a href="#requirements" id="toc-requirements">Requirements</a></li>
+<li><a href="#api-interaction-functions" id="toc-api-interaction-functions">API Interaction Functions</a>
+<ul>
+<li><a href="#endpoint---1" id="toc-endpoint---1">EndPoint - 1</a></li>
+<li><a href="#endpoint---2" id="toc-endpoint---2">EndPoint - 2</a></li>
+</ul></li>
+<li><a href="#data-exploration" id="toc-data-exploration">Data
+Exploration</a>
+<ul>
+<li><a href="#adding-new-variables-and-contingency-table" id="toc-adding-new-variables-and-contingency-table">Adding New Variables
+and Contingency Table</a></li>
+<li><a href="#summarizing-the-data" id="toc-summarizing-the-data">Summarizing The Data</a></li>
+<li><a href="#plots" id="toc-plots">Plots</a></li>
+</ul></li>
+</ul>
+<!-- 
+############################################################# 
+#############################################################
+Project 2 - Group 2C
+############################################################# 
+############################################################# 
+-->
+
+<h2 id="spoonacular-recipe-and-food-api-vignette">Spoonacular Recipe and
+Food API Vignette</h2>
+<!-- link to Wiki page on APIs: -->
+
+<!-- [API] (https://en.wikipedia.org/wiki/API) -->
+
+<p>This document is a vignette to show how to retrieve data from an <a href="https://spoonacular.com/food-api/docs">API</a>. To demonstrate, we
+will be interacting with the Spoonacular Recipe and Food API. We are
+going to to build a few functions to interact with some of the endpoints
+and explore some of the data that we can retrieve for the Spoonacular
+API.</p>
+<p>We will use a function that connects with <code>complexSearch</code>,
+which is an end point of the API search. It returns a list of lists
+containing recipe names and other variables of interest that have
+default values or can be user defined. The user may either enter the
+type of cuisine, recipes with a specific ingredient, number of recipes
+to output based on modifications provided, type of diet, and protein
+range. We have another function that can retrieve the data for multiple
+cuisines specified by the user as well. We have a third function which
+can also be used to contact other endpoint of the API,
+<code>findByNutrients</code> to get all the recipes based on
+carbohydrate content.</p>
+<h2 id="requirements">Requirements</h2>
+<p>To use the functions for interacting with the Spoonacular Recipe and
+Food API, we used the following packages:</p>
+<ul>
+<li><a href="https://www.tidyverse.org/"><code>tidyverse</code></a>:
+tons of useful features for data manipulation and visualization</li>
+<li><a href="https://cran.r-project.org/web/packages/jsonlite/"><code>jsonlite</code></a>:
+API interaction</li>
+</ul>
+<p>In addition to those packages, I used the following packages in the
+rest of the document:</p>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/httr/"><code>httr</code></a>:
+extra functionality for</li>
+<li><a href="https://cran.r-project.org/web/packages/knitr/index.html"><code>knitr</code></a>:
+displaying tables in a markdown friendly way</li>
+</ul>
+<p><strong>Note</strong>: User needs to go to <a href="https://spoonacular.com/food-api/console#Profile">API_link</a>,
+create a profile and generate a <strong>key</strong>. This key will be
+used to <code>authenticate</code> the user for each API calls.</p>
+<!-- setup -->
+
+<h1 id="api-interaction-functions">API Interaction Functions</h1>
+<p>For this section, we have written some functions that will connect
+the user to the Spoonacular API and returns a object with the required
+information specified by the user.</p>
+<!-- Magaritte Nguyen's API Key -->
+
+<!-- 1faaf57a0fbc433fa74f31a9419dc85b  -->
+
+<h2 id="endpoint---1">EndPoint - 1</h2>
+<h3 id="my_spoonacular_api"><code>my_Spoonacular_API</code></h3>
+<p>In this function we call <code>complexSearch</code> endpoint of the
+Spoonacular API. The user can use this function to get the data from the
+API for different types of cuisine, recipes with a specific ingredient,
+maximum number of recipes to output, type of diet, and protein range.
+The function is user friendly and handles upper and lower case scenarios
+with spaces. <strong><code>GET</code></strong> from <code>httr</code> is
+used to connect with the API and retrieved the required information
+while <code>fromJSON</code> is used to convert the raw data into a
+readable format.</p>
+<p>Just some extra information on how to use the
+<code>my_spoonacular_api</code>: we are only able to specify one cuisine
+at a time, or else a message might appear letting the user know what is
+appropriate in this field. We can also specify one ingredient, but if
+there is nothing that matches, then the results will just be 0
+recipes.if the user would like some nutrient information as well, they
+can input TRUE or FALSE for this parameter. Lastly, we have different
+diets that the user can specify, such as vegetarian etc., and the amount
+of protein in grams (min and max range).</p>
+<p><strong>NOTE</strong>: user cannot fetch more than 100 records in the
+single call as it is restricted by the API.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Query will only return words in the title of the recipe</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># If set to true, you get nutritional information about each recipes returned.</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 100 is the max number of results you can get back for a single query.</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>my_Spoonacular_API <span class="ot">&lt;-</span> <span class="cf">function</span> (<span class="at">cuisinetxt =</span><span class="st">&quot;American&quot;</span>, <span class="at">ingredient =</span> <span class="st">&quot;fruit&quot;</span>, <span class="at">nutrientinfo =</span> <span class="st">&quot;TRUE&quot;</span>, <span class="at">number=</span><span class="dv">100</span>, <span class="at">diet =</span> <span class="st">&quot;&quot;</span>, <span class="at">minProtein =</span> <span class="dv">10</span>, <span class="at">maxProtein =</span> <span class="dv">100</span> ){</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="co">#valid cuisines to enter into the cuisine parameter</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="co">#using tolower() to make everything lowercase for east of search</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="co">#using str_replace_all for searches that are more than one word e.g. Latin American</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> ( <span class="sc">!</span> <span class="fu">any</span>(<span class="fu">str_replace_all</span>(<span class="fu">tolower</span>(cuisinetxt), <span class="st">&quot; &quot;</span>, <span class="st">&quot;-&quot;</span>) <span class="sc">%in%</span> <span class="fu">str_replace_all</span>( <span class="fu">tolower</span>(<span class="fu">c</span>(<span class="st">&quot;African&quot;</span>, <span class="st">&quot;American&quot;</span>, <span class="st">&quot;British&quot;</span>, <span class="st">&quot;Cajun&quot;</span>, <span class="st">&quot;Caribbean&quot;</span>, <span class="st">&quot;Chinese&quot;</span>, <span class="st">&quot;Eastern European&quot;</span>, <span class="st">&quot;European&quot;</span>, <span class="st">&quot;French&quot;</span>, <span class="st">&quot;German&quot;</span>, <span class="st">&quot;Greek&quot;</span>, <span class="st">&quot;Indian&quot;</span>, <span class="st">&quot;Irish&quot;</span>, <span class="st">&quot;Italian&quot;</span>,   <span class="st">&quot;Japanese&quot;</span>, <span class="st">&quot;Jewish&quot;</span>, <span class="st">&quot;Korean&quot;</span>, <span class="st">&quot;Latin American&quot;</span>, <span class="st">&quot;Mediterranean&quot;</span>, <span class="st">&quot;Mexican&quot;</span>, <span class="st">&quot;Middle Eastern&quot;</span>, <span class="st">&quot;Nordic&quot;</span>, <span class="st">&quot;Southern&quot;</span>, <span class="st">&quot;Spanish&quot;</span>, <span class="st">&quot;Thai&quot;</span>, <span class="st">&quot;Vietnamese&quot;</span>)), <span class="st">&quot; &quot;</span>, <span class="st">&quot;-&quot;</span> ) ) ) { <span class="fu">stop</span> (<span class="st">&#39;Please only include an acceptable cuisine input seen below: </span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;African&quot;, &quot;American&quot;, &quot;British&quot;, &quot;Cajun&quot;, &quot;Caribbean&quot;, &quot;Chinese&quot;, &quot;Eastern European&quot;, &quot;European&quot;, &quot;French&quot;, &quot;German&quot;, &quot;Greek&quot;, &quot;Indian&quot;, &quot;Irish&quot;, &quot;Italian&quot;,   &quot;Japanese&quot;, &quot;Jewish&quot;, &quot;Korean&quot;, &quot;Latin American&quot;, &quot;Mediterranean&quot;, &quot;Mexican&quot;, &quot;Middle Eastern&quot;, &quot;Nordic&quot;, &quot;Southern&quot;, &quot;Spanish&quot;, &quot;Thai&quot;, &quot;Vietnamese&quot; </span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="st">*** If you include more than one cuisine seperated by a comma, ignore this message.&#39;</span>) </span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  } <span class="co">#end of cuisine check</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>  <span class="co">#using GET to return info about a topic that we are interested in </span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>  myGET <span class="ot">&lt;-</span> <span class="fu">GET</span>(<span class="at">url=</span><span class="fu">paste0</span>(<span class="st">&quot;https://api.spoonacular.com/recipes/complexSearch?cuisine=&quot;</span>, cuisinetxt, <span class="st">&quot;&amp;includeIngredients=&quot;</span>, ingredient, <span class="st">&quot;&amp;addRecipeNutrition=&quot;</span>, nutrientinfo, <span class="st">&quot;&amp;number=&quot;</span>,number,<span class="st">&quot;&amp;diet=&quot;</span>,diet,<span class="st">&quot;&amp;minProtein&quot;</span>,minProtein,<span class="st">&quot;&amp;maxProtein&quot;</span>,maxProtein,<span class="st">&quot;&amp;apiKey=&quot;</span>,params<span class="sc">$</span><span class="st">`</span><span class="at">api-key</span><span class="st">`</span>))  </span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>  <span class="co">#looking at content (raw data) and converting it into something we can read from myGET  </span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>  <span class="co">#data</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>  spoonacular <span class="ot">&lt;-</span> <span class="fu">fromJSON</span>(<span class="fu">rawToChar</span>(myGET<span class="sc">$</span>content))</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>  spoonacular<span class="sc">$</span>cuisinetxt <span class="ot">&lt;-</span> cuisinetxt</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>  <span class="co">#results returned as a dataframe</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(spoonacular)</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>} <span class="co">#end of function that called API</span></span></code></pre></div>
+<h3 id="my_multicuisine_api"><code>my_multiCuisine_API</code></h3>
+<p>In this function we call <code>complexSearch</code> endpoint of the
+API. It is similar to <code>my_Spoonacular_API</code> but in this
+function the user can enter multiple cuisines to get the combined data
+of all the cuisines. The user has to use <code>paste</code> with
+<code>collapse = &quot;,&quot;</code> as the parameter to create a list of
+cuisines before passing it to the function.</p>
+<p><strong>NOTE</strong>: user cannot fetch more than 100 records in the
+single call as it is restricted by the API.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Function for multiple cuisines in the cuisinetxt parameter</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  my_multiCuisine_API <span class="ot">&lt;-</span> <span class="cf">function</span> (<span class="at">cuisinetxt =</span><span class="st">&quot; &quot;</span>, <span class="at">ingredient =</span> <span class="st">&quot;&quot;</span>, <span class="at">nutrientinfo =</span> <span class="st">&quot;TRUE&quot;</span>, <span class="at">number=</span><span class="dv">100</span>, <span class="at">diet =</span> <span class="st">&quot;&quot;</span>, <span class="at">minProtein =</span> <span class="dv">10</span>, <span class="at">maxProtein =</span> <span class="dv">100</span> ){</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>   myGETTemp <span class="ot">&lt;-</span> <span class="fu">GET</span>(<span class="at">url=</span><span class="fu">paste0</span>(<span class="st">&quot;https://api.spoonacular.com/recipes/complexSearch?cuisine=&quot;</span>, cuisinetxt, <span class="st">&quot;&amp;includeIngredients=&quot;</span>, ingredient, <span class="st">&quot;&amp;addRecipeNutrition=&quot;</span>, nutrientinfo, <span class="st">&quot;&amp;number=&quot;</span>, number,<span class="st">&quot;&amp;diet=&quot;</span>,diet,<span class="st">&quot;&amp;minProtein&quot;</span>,minProtein,<span class="st">&quot;&amp;maxProtein&quot;</span>,maxProtein,<span class="st">&quot;&amp;apiKey=&quot;</span>,params<span class="sc">$</span><span class="st">`</span><span class="at">api-key</span><span class="st">`</span>))  </span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>   <span class="fu">return</span>(myGETTemp)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  }</span></code></pre></div>
+<h2 id="endpoint---2">EndPoint - 2</h2>
+<h3 id="findrecipebynutrients"><code>findRecipeByNutrients</code></h3>
+<p>The <code>findByNutrients</code> endpoint of the API is called in the
+method below. The function can assist users in retrieving data on the
+nutritional value of recipes. To choose dishes from the specified
+<strong>carbohydrate content</strong> and certain number of recipes
+output, the user can alter the carbohydrates range. It returns the
+object along with some information on the recipe, its nutrient content,
+and other parameters. <strong><code>GET</code></strong> from
+<code>httr</code> is used to connect with the API and get the required
+information while <code>fromJSON</code> is used to convert the raw data
+into readable format.</p>
+<p><strong>NOTE</strong>: user cannot fetch more than 100 records in the
+single call as it is restricted by the API.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Looking for the given number of recipes with minCarbs and maxCarbs</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>findRecipeByNutrients <span class="ot">&lt;-</span> <span class="cf">function</span>(<span class="at">minCarbs =</span> <span class="dv">10</span>, <span class="at">maxCarbs =</span> <span class="dv">100</span>, <span class="at">numberOfRecipes =</span> <span class="dv">100</span>){</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>   getURL <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">&quot;https://api.spoonacular.com/recipes/findByNutrients?minCarbs=&quot;</span>,minCarbs,<span class="st">&quot;&amp;maxCarbs=&quot;</span>,maxCarbs,<span class="st">&quot;&amp;number=&quot;</span>,numberOfRecipes,<span class="st">&quot;&amp;apiKey=&quot;</span>,params<span class="sc">$</span><span class="st">`</span><span class="at">api-key</span><span class="st">`</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  foodData <span class="ot">&lt;-</span> <span class="fu">GET</span>(getURL)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  findByNutrientsDF <span class="ot">&lt;-</span> <span class="fu">fromJSON</span>(<span class="fu">rawToChar</span>(foodData<span class="sc">$</span>content))</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(findByNutrientsDF)   </span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p>In the code chunk below, we have called
+<code>my_Spoonacular_API()</code> and
+<code>findRecipeByNutrients()</code>, which creates objects for
+different cuisines with different ingredients and other parameters. The
+user can reference this section of the vignette as an example call, if
+they want to get information about different cuisines with different
+modifications.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Example calls for my_Spoonacular_API</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>AmericanCuisineInfo <span class="ot">&lt;-</span> <span class="fu">my_Spoonacular_API</span> (<span class="at">cuisinetxt =</span><span class="st">&quot;American&quot;</span>, <span class="at">ingredient =</span> <span class="st">&quot;fruit&quot;</span>, <span class="at">nutrientinfo =</span> <span class="st">&quot;TRUE&quot;</span>, <span class="at">number=</span><span class="dv">100</span>, <span class="at">diet =</span> <span class="st">&quot;&quot;</span>, <span class="at">minProtein =</span> <span class="dv">0</span>, <span class="at">maxProtein =</span> <span class="dv">100</span>)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>LatinAmericanCuisineInfo <span class="ot">&lt;-</span> <span class="fu">my_Spoonacular_API</span> (<span class="at">cuisinetxt =</span> <span class="st">&quot;Latin American&quot;</span>, <span class="at">ingredient =</span> <span class="st">&quot;salt&quot;</span>, <span class="at">nutrientinfo =</span> <span class="st">&quot;TRUE&quot;</span>, <span class="at">number=</span><span class="dv">100</span>, <span class="at">diet =</span> <span class="st">&quot;&quot;</span>, <span class="at">minProtein =</span> <span class="dv">10</span>, <span class="at">maxProtein =</span> <span class="dv">100</span>)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>ChineseCuisineInfo <span class="ot">&lt;-</span> <span class="fu">my_Spoonacular_API</span> (<span class="at">cuisinetxt =</span> <span class="st">&quot;Chinese&quot;</span>, <span class="at">ingredient =</span> <span class="st">&quot;cabbage&quot;</span>, <span class="at">nutrientinfo =</span> <span class="st">&quot;TRUE&quot;</span>, <span class="at">number=</span><span class="dv">100</span>, <span class="at">diet =</span> <span class="st">&quot;glutenFree&quot;</span>, <span class="at">minProtein =</span> <span class="dv">10</span>, <span class="at">maxProtein =</span> <span class="dv">100</span>)</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co">#Example calls for findRecipeByNutrients</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>dispDF <span class="ot">&lt;-</span> <span class="fu">findRecipeByNutrients</span>(<span class="at">numberOfRecipes =</span> <span class="dv">20</span>)</span></code></pre></div>
+<p>These are the data frames containing nutrient information about the
+particular cuisine, which can be used further for our data exploration
+(EDA).</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>  AmericanCuisineInfotbl <span class="ot">&lt;-</span> <span class="fu">as_tibble</span>(AmericanCuisineInfo<span class="sc">$</span>results)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  AmericanCuisineInfotbl</span></code></pre></div>
+<pre><code>## # A tibble: 100 × 35
+##    vegetarian vegan glutenF…¹ dairy…² veryH…³ cheap veryP…⁴ susta…⁵
+##    &lt;lgl&gt;      &lt;lgl&gt; &lt;lgl&gt;     &lt;lgl&gt;   &lt;lgl&gt;   &lt;lgl&gt; &lt;lgl&gt;   &lt;lgl&gt;  
+##  1 TRUE       TRUE  FALSE     TRUE    FALSE   FALSE FALSE   FALSE  
+##  2 FALSE      FALSE TRUE      FALSE   TRUE    FALSE FALSE   FALSE  
+##  3 FALSE      FALSE TRUE      FALSE   FALSE   FALSE FALSE   FALSE  
+##  4 FALSE      FALSE FALSE     TRUE    TRUE    FALSE FALSE   FALSE  
+##  5 FALSE      FALSE TRUE      TRUE    FALSE   FALSE FALSE   FALSE  
+##  6 FALSE      FALSE FALSE     FALSE   FALSE   FALSE FALSE   FALSE  
+##  7 FALSE      FALSE FALSE     FALSE   FALSE   FALSE FALSE   FALSE  
+##  8 FALSE      FALSE FALSE     TRUE    FALSE   FALSE FALSE   FALSE  
+##  9 FALSE      FALSE TRUE      FALSE   FALSE   FALSE FALSE   FALSE  
+## 10 FALSE      FALSE FALSE     TRUE    FALSE   FALSE FALSE   FALSE  
+## # … with 90 more rows, 27 more variables: lowFodmap &lt;lgl&gt;,
+## #   weightWatcherSmartPoints &lt;int&gt;, gaps &lt;chr&gt;,
+## #   preparationMinutes &lt;int&gt;, cookingMinutes &lt;int&gt;,
+## #   aggregateLikes &lt;int&gt;, healthScore &lt;int&gt;, creditsText &lt;chr&gt;,
+## #   sourceName &lt;chr&gt;, pricePerServing &lt;dbl&gt;, id &lt;int&gt;,
+## #   title &lt;chr&gt;, readyInMinutes &lt;int&gt;, servings &lt;int&gt;,
+## #   sourceUrl &lt;chr&gt;, image &lt;chr&gt;, imageType &lt;chr&gt;, …</code></pre>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>  LatinAmericanCuisineInfoTbl <span class="ot">&lt;-</span> <span class="fu">as_tibble</span>(LatinAmericanCuisineInfo<span class="sc">$</span>results)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  LatinAmericanCuisineInfoTbl</span></code></pre></div>
+<pre><code>## # A tibble: 12 × 35
+##    vegetarian vegan glutenF…¹ dairy…² veryH…³ cheap veryP…⁴ susta…⁵
+##    &lt;lgl&gt;      &lt;lgl&gt; &lt;lgl&gt;     &lt;lgl&gt;   &lt;lgl&gt;   &lt;lgl&gt; &lt;lgl&gt;   &lt;lgl&gt;  
+##  1 FALSE      FALSE TRUE      TRUE    TRUE    FALSE FALSE   FALSE  
+##  2 FALSE      FALSE TRUE      TRUE    TRUE    FALSE FALSE   FALSE  
+##  3 FALSE      FALSE TRUE      TRUE    FALSE   FALSE FALSE   FALSE  
+##  4 FALSE      FALSE TRUE      TRUE    FALSE   FALSE FALSE   FALSE  
+##  5 FALSE      FALSE FALSE     TRUE    FALSE   FALSE FALSE   FALSE  
+##  6 FALSE      FALSE TRUE      TRUE    FALSE   FALSE FALSE   FALSE  
+##  7 FALSE      FALSE TRUE      TRUE    FALSE   FALSE FALSE   FALSE  
+##  8 FALSE      FALSE TRUE      TRUE    FALSE   FALSE FALSE   FALSE  
+##  9 TRUE       TRUE  TRUE      TRUE    FALSE   FALSE FALSE   FALSE  
+## 10 TRUE       FALSE TRUE      FALSE   FALSE   FALSE FALSE   FALSE  
+## 11 FALSE      FALSE TRUE      FALSE   FALSE   FALSE FALSE   FALSE  
+## 12 FALSE      FALSE TRUE      TRUE    FALSE   FALSE FALSE   FALSE  
+## # … with 27 more variables: lowFodmap &lt;lgl&gt;,
+## #   weightWatcherSmartPoints &lt;int&gt;, gaps &lt;chr&gt;,
+## #   preparationMinutes &lt;int&gt;, cookingMinutes &lt;int&gt;,
+## #   aggregateLikes &lt;int&gt;, healthScore &lt;int&gt;, creditsText &lt;chr&gt;,
+## #   sourceName &lt;chr&gt;, pricePerServing &lt;dbl&gt;, id &lt;int&gt;,
+## #   title &lt;chr&gt;, readyInMinutes &lt;int&gt;, servings &lt;int&gt;,
+## #   sourceUrl &lt;chr&gt;, image &lt;chr&gt;, imageType &lt;chr&gt;, …</code></pre>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>  ChineseCuisineInfoTbl <span class="ot">&lt;-</span> <span class="fu">as_tibble</span>(ChineseCuisineInfo<span class="sc">$</span>results)</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  ChineseCuisineInfoTbl</span></code></pre></div>
+<pre><code>## # A tibble: 4 × 34
+##   vegetarian vegan glutenFree dairy…¹ veryH…² cheap veryP…³ susta…⁴
+##   &lt;lgl&gt;      &lt;lgl&gt; &lt;lgl&gt;      &lt;lgl&gt;   &lt;lgl&gt;   &lt;lgl&gt; &lt;lgl&gt;   &lt;lgl&gt;  
+## 1 FALSE      FALSE TRUE       TRUE    TRUE    FALSE FALSE   FALSE  
+## 2 FALSE      FALSE FALSE      TRUE    FALSE   FALSE FALSE   FALSE  
+## 3 FALSE      FALSE FALSE      TRUE    FALSE   FALSE FALSE   FALSE  
+## 4 FALSE      FALSE TRUE       TRUE    FALSE   FALSE FALSE   FALSE  
+## # … with 26 more variables: lowFodmap &lt;lgl&gt;,
+## #   weightWatcherSmartPoints &lt;int&gt;, gaps &lt;chr&gt;,
+## #   preparationMinutes &lt;int&gt;, cookingMinutes &lt;int&gt;,
+## #   aggregateLikes &lt;int&gt;, healthScore &lt;int&gt;, creditsText &lt;chr&gt;,
+## #   license &lt;chr&gt;, sourceName &lt;chr&gt;, pricePerServing &lt;dbl&gt;,
+## #   id &lt;int&gt;, title &lt;chr&gt;, readyInMinutes &lt;int&gt;, servings &lt;int&gt;,
+## #   sourceUrl &lt;chr&gt;, image &lt;chr&gt;, imageType &lt;chr&gt;, …</code></pre>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>  dispDFTbl <span class="ot">&lt;-</span> <span class="fu">as_tibble</span>(dispDF) </span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  dispDFTbl</span></code></pre></div>
+<pre><code>## # A tibble: 20 × 8
+##         id title          image image…¹ calor…² protein fat   carbs
+##      &lt;int&gt; &lt;chr&gt;          &lt;chr&gt; &lt;chr&gt;     &lt;int&gt; &lt;chr&gt;   &lt;chr&gt; &lt;chr&gt;
+##  1  634010 Banana Bread … http… jpg         211 4g      9g    31g  
+##  2  634141 Banana Oatmea… http… jpg         148 4g      3g    27g  
+##  3  634931 Best Soft Gin… http… jpg          75 1g      2g    13g  
+##  4  635856 Braised Pork:… http… jpg         583 16g     47g   31g  
+##  5  637440 Chapchae (Kor… http… jpg         397 5g      15g   64g  
+##  6  638496 Chickpea and … http… jpg         272 9g      12g   36g  
+##  7  643244 Four-Ingredie… http… jpg         162 5g      1g    37g  
+##  8  649048 Korean Extra … http… jpg         937 56g     51g   60g  
+##  9  649314 Lavash         http… jpg         278 7g      9g    46g  
+## 10  655249 Peanut Butter… http… jpg         359 8g      23g   34g  
+## 11  657095 Prawn Curry    http… jpg         458 29g     17g   47g  
+## 12  657226 Pulled Pork S… http… jpg         873 83g     34g   59g  
+## 13  657889 Raspberry Pea… http… jpg         164 2g      5g    29g  
+## 14  658151 Refreshing Zu… http… jpg         331 4g      29g   17g  
+## 15  660525 Soft-Baked Pr… http… jpg         376 7g      22g   41g  
+## 16  661843 Strawberry Ma… http… jpg         441 3g      25g   55g  
+## 17  663824 Trinidadian C… http… jpg         554 35g     37g   20g  
+## 18  716195 Spicy Indian-… http… jpg         134 5g      6g    15g  
+## 19 1062883 How to Make E… http… jpg         345 13g     14g   43g  
+## 20 1077393 Easter Sugar … http… jpg         573 8g      25g   80g  
+## # … with abbreviated variable names ¹​imageType, ²​calories</code></pre>
+<h1 id="data-exploration">Data Exploration</h1>
+<h2 id="adding-new-variables-and-contingency-table">Adding New Variables
+and Contingency Table</h2>
+<p>In this section we have created two new variables and added them to
+the data frame and also created three contingency tables explaining the
+<strong>association</strong> between the variables of the dataframes.
+The nutrients tibble is extracted from the
+<code>AmericanCuisineInfo</code> data frame.</p>
+<h3 id="adding-new-variables">Adding New Variables</h3>
+<p>In the below code chunk the information extracted from the API does
+not have information related to <strong>total price</strong> of the
+recipe and <strong>proteins per serving</strong>. Some variables of
+interest provided in the data was information about
+<code>price per serving</code>, <code>total servings</code> and
+<code>total_protein</code>. We used these variables and created two new
+variables <code>totalprice</code> and
+<code>protein_per_serving</code>.</p>
+<p>It was interesting to find out that total price provided in the API
+was in pennies. So, for <code>total price</code> we calculated this by
+multiplying <code>price per serving</code> and <code>servings</code>
+then dividing by 100 to get a dollar amount for
+<code>total price</code>. For <code>protein per serving</code> we
+divided amount of protein in a recipe by total number of servings the
+recipe made.</p>
+<p>Some nutrients that we were interested in were calories, protein,
+fat, and carbohydrates.</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Example for data exploration</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="co"># American cuisine info object that was created above</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>CuisineInfo <span class="ot">&lt;-</span> AmericanCuisineInfo</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="co"># viewing nutrients data frame nested inside results list</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="fu">View</span>(CuisineInfo<span class="sc">$</span>results<span class="sc">$</span>nutrition<span class="sc">$</span>nutrients[[<span class="dv">1</span>]])</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a><span class="co"># want to look at calories, protein, carbs, fat</span></span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a><span class="co"># bind_rows - binding row wise for all lists</span></span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a><span class="co"># nutrients is a list of dataframes</span></span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>nutrients <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(CuisineInfo<span class="sc">$</span>results<span class="sc">$</span>nutrition<span class="sc">$</span>nutrients, <span class="at">.id=</span><span class="st">&quot;df&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_tibble</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span> (name <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;Calories&quot;</span>, <span class="st">&quot;Protein&quot;</span>, <span class="st">&quot;Fat&quot;</span>, <span class="st">&quot;Carbohydrates&quot;</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_wider</span>(<span class="at">id_cols=</span>df, <span class="at">names_from=</span><span class="fu">c</span>(name, unit), <span class="at">values_from=</span>amount) <span class="sc">%&gt;%</span> </span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_cols</span> (CuisineInfo<span class="sc">$</span>results[,<span class="fu">c</span>(<span class="st">&quot;id&quot;</span>,<span class="st">&quot;title&quot;</span>, <span class="st">&quot;vegetarian&quot;</span>, <span class="st">&quot;vegan&quot;</span>, <span class="st">&quot;pricePerServing&quot;</span>, <span class="st">&quot;readyInMinutes&quot;</span>, <span class="st">&quot;servings&quot;</span>)]) <span class="sc">%&gt;%</span></span>
+<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span> (<span class="at">totalprice =</span> (pricePerServing<span class="sc">*</span>servings)<span class="sc">/</span><span class="dv">100</span>, <span class="at">protein_per_serving =</span> (Protein_g<span class="sc">/</span>servings ) )</span>
+<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a><span class="co"># results is a data frame that we can use to do EDA</span></span>
+<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a><span class="co"># cost per serving is in pennies.</span></span>
+<span id="cb13-19"><a href="#cb13-19" aria-hidden="true" tabindex="-1"></a><span class="co"># I converted total price/cost to make the recipe in USD</span></span>
+<span id="cb13-20"><a href="#cb13-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-21"><a href="#cb13-21" aria-hidden="true" tabindex="-1"></a><span class="co"># output nutrients tibble</span></span>
+<span id="cb13-22"><a href="#cb13-22" aria-hidden="true" tabindex="-1"></a>nutrients</span></code></pre></div>
+<pre><code>## # A tibble: 100 × 14
+##    df    Calorie…¹ Fat_g Carbo…² Prote…³     id title veget…⁴ vegan
+##    &lt;chr&gt;     &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;  &lt;int&gt; &lt;chr&gt; &lt;lgl&gt;   &lt;lgl&gt;
+##  1 1          590. 21.9    80.5     23.4 6.43e5 Fala… TRUE    TRUE 
+##  2 2          393. 29.0     7.17    26.9 6.47e5 Salm… FALSE   FALSE
+##  3 3          455. 25.9    25.6     33.7 6.39e5 Chil… FALSE   FALSE
+##  4 4          479.  8.77   85.0     18.7 6.51e5 Masa… FALSE   FALSE
+##  5 5          450. 17.5    11.7     56.9 6.60e5 Slow… FALSE   FALSE
+##  6 6          475. 18.2    27.7     49.0 6.38e5 Chee… FALSE   FALSE
+##  7 7          971. 69.6    34.0     50.6 7.76e5 Gorg… FALSE   FALSE
+##  8 8          755. 20.5    58.9     82.6 6.57e5 Pull… FALSE   FALSE
+##  9 9          588. 23.9    28.6     65.4 6.62e5 Supe… FALSE   FALSE
+## 10 10         311.  8.83   33.8     23.2 1.10e6 Salm… FALSE   FALSE
+## # … with 90 more rows, 5 more variables: pricePerServing &lt;dbl&gt;,
+## #   readyInMinutes &lt;int&gt;, servings &lt;int&gt;, totalprice &lt;dbl&gt;,
+## #   protein_per_serving &lt;dbl&gt;, and abbreviated variable names
+## #   ¹​Calories_kcal, ²​Carbohydrates_g, ³​Protein_g, ⁴​vegetarian</code></pre>
+<h3 id="contingency-table">Contingency Table</h3>
+<p>In the below chunk of code, we created contingency tables to find the
+associations between <code>vegan and vegetarian</code>,
+<code>Source and Healthy</code>, <code>Source and Expensive</code>.</p>
+<p>In the <code>vegan and vegetarian</code> contingency table, we see
+that there are <strong>5 vegan recipes</strong> in the
+<strong>American</strong> Cuisine with fruit being the ingredient that
+is being searched. So, we can conclude that some vegetarian recipes are
+vegan as well. This is as expected.</p>
+<p>In the <code>Source and Healthy</code> contingency table, we could
+see that most of the unhealthy food recipes are from
+<strong>Foodista</strong> source. Now we know which website to avoid for
+healthy food options.</p>
+<p>In the <code>Source and Expensive</code> contingency table, we added
+one more variable to the dataframe called <strong>expensive</strong>,
+which was a category we defined if the price per serving was higher than
+Q3. Here, we can see that the recipes suggested by
+<strong>Foodista</strong> has the <strong>maximum number</strong> of
+<strong>expensive</strong> recipes, but also suggests <strong>maximum
+number</strong> of <strong>inexpensive</strong> recipes.</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># make 3 contingency tables</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="co"># vegetarian, vegan </span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>VegConTbl <span class="ot">&lt;-</span> base<span class="sc">::</span><span class="fu">table</span>(<span class="st">&quot;Vegan&quot;</span> <span class="ot">=</span> nutrients<span class="sc">$</span>vegan, <span class="st">&quot;Vegetarian&quot;</span> <span class="ot">=</span> nutrients<span class="sc">$</span>vegetarian)</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>VegConTbl</span></code></pre></div>
+<pre><code>##        Vegetarian
+## Vegan   FALSE TRUE
+##   FALSE    59   36
+##   TRUE      0    5</code></pre>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># sourceName and Healthy</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>sourceHealthyConTbl <span class="ot">&lt;-</span> base<span class="sc">::</span><span class="fu">table</span>(<span class="st">&quot;Source&quot;</span> <span class="ot">=</span> CuisineInfo<span class="sc">$</span>results<span class="sc">$</span>sourceName, <span class="st">&quot;Healthy&quot;</span> <span class="ot">=</span> CuisineInfo<span class="sc">$</span>results<span class="sc">$</span>veryHealthy ) </span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>sourceHealthyConTbl</span></code></pre></div>
+<pre><code>##                   Healthy
+## Source             FALSE TRUE
+##   A Southern Grace     1    0
+##   Afrolems             2    0
+##   blogspot.com         1    0
+##   Foodista            70    1
+##   foodista.com        20    1
+##   Pink When            2    0
+##   spoonacular          2    0</code></pre>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co">#create category</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="co">#price expensive</span></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="co">#price in pennies</span></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>new_CuisineQuery <span class="ot">&lt;-</span> CuisineInfo<span class="sc">$</span>results <span class="sc">%&gt;%</span> </span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span> ( <span class="st">&quot;expensive&quot;</span> <span class="ot">=</span> pricePerServing <span class="sc">&gt;=</span> <span class="fu">quantile</span>(CuisineInfo<span class="sc">$</span>results<span class="sc">$</span>pricePerServing, <span class="fl">0.75</span>))</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>sourceExpensivecontTable <span class="ot">&lt;-</span> base<span class="sc">::</span><span class="fu">table</span>(<span class="st">&quot;Source&quot;</span> <span class="ot">=</span> CuisineInfo<span class="sc">$</span>results<span class="sc">$</span>sourceName, <span class="st">&quot;Expensive&quot;</span> <span class="ot">=</span> new_CuisineQuery<span class="sc">$</span>expensive ) </span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>sourceExpensivecontTable</span></code></pre></div>
+<pre><code>##                   Expensive
+## Source             FALSE TRUE
+##   A Southern Grace     1    0
+##   Afrolems             1    1
+##   blogspot.com         0    1
+##   Foodista            60   11
+##   foodista.com        11   10
+##   Pink When            1    1
+##   spoonacular          1    1</code></pre>
+<h2 id="summarizing-the-data">Summarizing The Data</h2>
+<p>In this section we are summarizing the data by using the following
+functions <code>mean()</code>, <code>median()</code>,
+<code>desc()</code>, <code>select()</code>, <code>summarise()</code>,
+and <code>sppaly()</code>.</p>
+<p>In the following code chunk, for the <code>mean_protein</code>
+object, we did a mean price breakdown with a <code>group_by()</code>
+function with vegetarian and non vegetarian. In the
+<code>highProteinRecipes</code> object, we can see that <strong>Cinnamon
+French Toast Sticks</strong> has higher protein than <strong>Turkey
+Burgers with Slaw</strong> even though it is a vegetarian recipe. This
+is surprising, but also makes sense due to the protein content in
+eggs.</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># mean price breakdown by group - vegetarian and non vegetarian</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="co"># from data above in other code chunk</span></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>mean_protein <span class="ot">&lt;-</span> nutrients <span class="sc">%&gt;%</span></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span> (vegetarian) <span class="sc">%&gt;%</span></span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="st">&quot;Count&quot;</span> <span class="ot">=</span> <span class="fu">n</span>(), <span class="st">&quot;Mean&quot;</span> <span class="ot">=</span> <span class="fu">mean</span>(Protein_g), <span class="st">&quot;SD&quot;</span> <span class="ot">=</span> <span class="fu">sd</span>(Protein_g), <span class="st">&quot;Med.&quot;</span> <span class="ot">=</span> <span class="fu">median</span>(Protein_g), <span class="st">&quot;Min.&quot;</span><span class="ot">=</span><span class="fu">min</span>(Protein_g), <span class="st">&quot;Max.&quot;</span> <span class="ot">=</span> <span class="fu">max</span>(Protein_g))</span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a><span class="co"># protein content per serving size (for the recipes)</span></span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a><span class="co"># view the data to see what the protein per serving is.</span></span>
+<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a>highProteinRecipes <span class="ot">&lt;-</span> nutrients <span class="sc">%&gt;%</span> </span>
+<span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span> (vegetarian, vegan, title, protein_per_serving, Protein_g, servings) <span class="sc">%&gt;%</span></span>
+<span id="cb21-12"><a href="#cb21-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span> (<span class="fu">desc</span>(protein_per_serving)) <span class="sc">%&gt;%</span></span>
+<span id="cb21-13"><a href="#cb21-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(<span class="dv">5</span>) </span></code></pre></div>
+<p>In the code chunk below we have created objects by fetching the
+information of multiple cuisines from the Spoonacular API.
+<code>paste()</code> is used along with <code>collapse</code> to pass as
+a parameter to the <code>my_multiCuisine_API()</code> custom function.
+The code chunk returns a tibble containing the number of recipes for
+each cuisine in the data that we extracted for all the ingredients and
+given protein range. It can be seen that the number of
+<strong>American</strong> cuisine recipes are much
+<strong>higher</strong> in comparison to <strong>Chinese</strong> and
+<strong>Latin American</strong> cuisines.</p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Vector of multiple cuisines</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>  cuisinetxt <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;American&quot;</span>, <span class="st">&quot;chinese&quot;</span>, <span class="st">&quot;Latin American&quot;</span>)</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Using paste to create a text string of cuisine types to fetch information </span></span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>  cuisineComb <span class="ot">&lt;-</span> <span class="fu">paste</span>(cuisinetxt, <span class="at">collapse =</span> <span class="st">&quot;,&quot;</span>)</span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Calling my_multiCuisine_API function to get the combined information</span></span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a>  MultiCuisineInfoObj <span class="ot">&lt;-</span> <span class="fu">my_multiCuisine_API</span>(<span class="at">cuisinetxt =</span> cuisineComb, <span class="at">ingredient =</span> <span class="st">&quot;&quot;</span>, <span class="at">nutrientinfo =</span>  </span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a>                  <span class="st">&quot;TRUE&quot;</span>, <span class="at">number=</span><span class="dv">100</span>, <span class="at">diet =</span> <span class="st">&quot;&quot;</span>, <span class="at">minProtein =</span> <span class="dv">10</span>, <span class="at">maxProtein =</span> <span class="dv">100</span>)    </span>
+<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Object with parsed data collected from API   </span></span>
+<span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a>  spoonacularTemp <span class="ot">&lt;-</span> <span class="fu">fromJSON</span>(<span class="fu">rawToChar</span>(MultiCuisineInfoObj<span class="sc">$</span>content))</span>
+<span id="cb22-13"><a href="#cb22-13" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb22-14"><a href="#cb22-14" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Summarizing n counts based on cuisines </span></span>
+<span id="cb22-15"><a href="#cb22-15" aria-hidden="true" tabindex="-1"></a>  MultiCuisineInfo <span class="ot">&lt;-</span> spoonacularTemp<span class="sc">$</span>results <span class="sc">%&gt;%</span></span>
+<span id="cb22-16"><a href="#cb22-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">group_by</span>(cuisines) <span class="sc">%&gt;%</span> </span>
+<span id="cb22-17"><a href="#cb22-17" aria-hidden="true" tabindex="-1"></a>    <span class="fu">summarize</span>(<span class="at">count=</span><span class="fu">n</span>()) <span class="sc">%&gt;%</span> </span>
+<span id="cb22-18"><a href="#cb22-18" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(cuisines <span class="sc">!=</span> <span class="st">&quot;character(0)&quot;</span>)</span>
+<span id="cb22-19"><a href="#cb22-19" aria-hidden="true" tabindex="-1"></a>   </span>
+<span id="cb22-20"><a href="#cb22-20" aria-hidden="true" tabindex="-1"></a>  <span class="co"># unlist the list of cuisine names and combining it into single name using apply</span></span>
+<span id="cb22-21"><a href="#cb22-21" aria-hidden="true" tabindex="-1"></a>  cuisineInfoTemp <span class="ot">&lt;-</span> <span class="fu">apply</span>(MultiCuisineInfo, <span class="dv">1</span>, <span class="cf">function</span>(y) <span class="fu">sapply</span>(y, <span class="cf">function</span>(x) <span class="fu">paste</span>(<span class="fu">unlist</span>(x), </span>
+<span id="cb22-22"><a href="#cb22-22" aria-hidden="true" tabindex="-1"></a>                           <span class="at">collapse=</span><span class="st">&quot;_&quot;</span>)))</span>
+<span id="cb22-23"><a href="#cb22-23" aria-hidden="true" tabindex="-1"></a>   </span>
+<span id="cb22-24"><a href="#cb22-24" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Taking transpose of the df to makes it useful for plotting</span></span>
+<span id="cb22-25"><a href="#cb22-25" aria-hidden="true" tabindex="-1"></a>  cuisineInfoTempTranspose <span class="ot">&lt;-</span> <span class="fu">t</span>(cuisineInfoTemp)</span>
+<span id="cb22-26"><a href="#cb22-26" aria-hidden="true" tabindex="-1"></a>   </span>
+<span id="cb22-27"><a href="#cb22-27" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Converting it to tibble</span></span>
+<span id="cb22-28"><a href="#cb22-28" aria-hidden="true" tabindex="-1"></a>  MultiCuisineInfoTbl <span class="ot">&lt;-</span> <span class="fu">as_tibble</span>(cuisineInfoTempTranspose)</span>
+<span id="cb22-29"><a href="#cb22-29" aria-hidden="true" tabindex="-1"></a>   </span>
+<span id="cb22-30"><a href="#cb22-30" aria-hidden="true" tabindex="-1"></a>  <span class="co"># The count variable was character, used sapply to conver it into numeric</span></span>
+<span id="cb22-31"><a href="#cb22-31" aria-hidden="true" tabindex="-1"></a>  MultiCuisineInfoTbl<span class="sc">$</span>count <span class="ot">&lt;-</span> <span class="fu">sapply</span>(MultiCuisineInfoTbl<span class="sc">$</span>count, as.numeric)</span>
+<span id="cb22-32"><a href="#cb22-32" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb22-33"><a href="#cb22-33" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Multicuisine output tibble </span></span>
+<span id="cb22-34"><a href="#cb22-34" aria-hidden="true" tabindex="-1"></a>  MultiCuisineInfoTbl</span></code></pre></div>
+<pre><code>## # A tibble: 3 × 2
+##   cuisines                      count
+##   &lt;chr&gt;                         &lt;dbl&gt;
+## 1 Chinese_Asian                    11
+## 2 American                         80
+## 3 South American_Latin American     9</code></pre>
+<h2 id="plots">Plots</h2>
+<p>In this section, we did data exploration through multiple plots -
+like <strong>bar plot</strong>, <strong>histogram</strong>,
+<strong>boxplot</strong>, <strong>scatter plot</strong>, and
+<strong>scatter plot with linear model</strong>.</p>
+<p>In the code chunk below, we have used a bar plot to show the recipe
+count variations among the different cuisines. In this code chunk we
+have used <code>geom_bar()</code> for bar plot and <code>theme()</code>
+to tilt the x-axis names as they are overlapping. It can be seen from
+the plot that <strong>American</strong> cuisine has
+<strong>highest</strong> number of recipes with all the ingredients with
+protein range between 10-100.</p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>barPlot <span class="ot">&lt;-</span> <span class="cf">function</span>(df, xVar, yVar){</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>   g <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> df , <span class="fu">aes</span>(<span class="at">x =</span> xVar, <span class="at">y =</span> yVar))</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>   g <span class="sc">+</span> <span class="fu">geom_col</span>(<span class="fu">aes</span>(<span class="at">fill =</span> <span class="fu">as.factor</span>(xVar))) <span class="sc">+</span> <span class="fu">scale_fill_discrete</span>(<span class="at">name =</span> <span class="st">&quot;Type of Cuisine&quot;</span>) <span class="sc">+</span></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>   <span class="fu">xlab</span>(<span class="st">&quot;Cuisines&quot;</span>) <span class="sc">+</span> <span class="fu">ylab</span>(<span class="st">&quot;Count&quot;</span>) <span class="sc">+</span></span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>   <span class="fu">ggtitle</span>(<span class="st">&quot;Barplot For Cuisines Type Counts&quot;</span>) <span class="sc">+</span> <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">18</span>))</span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a><span class="fu">barPlot</span>(MultiCuisineInfoTbl,MultiCuisineInfoTbl<span class="sc">$</span>cuisines,MultiCuisineInfoTbl<span class="sc">$</span>count)</span></code></pre></div>
+<p><img src="data:image/png;base64,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" /><!-- --></p>
+<p>In this histogram, we have plotted for <strong>total price
+variation</strong> for <strong>American</strong> cuisine. We have used
+<code>geom_histogram()</code> for the histogram plot and added another
+layer to it using <code>geom_vline()</code>, showing the mean of
+<strong>total prices</strong> on the histogram plot. The histogram plots
+does not look like a normal distribution. It looks like it skewed
+towards the right. Maybe in future data exploration, we can transform
+the data into something more familiar and be able to draw conclusions
+from that familiar distribution.</p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>histPlot <span class="ot">&lt;-</span> <span class="cf">function</span>(df, xVar, <span class="at">bin_width =</span> <span class="dv">2</span>){</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>  g <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> df , <span class="fu">aes</span>(<span class="at">x =</span> xVar))</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>  g <span class="sc">+</span> <span class="fu">geom_histogram</span>(<span class="at">binwidth =</span> bin_width, <span class="at">color=</span><span class="st">&quot;blue&quot;</span>, <span class="at">fill=</span><span class="st">&quot;white&quot;</span>) <span class="sc">+</span></span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_vline</span>(<span class="fu">aes</span>(<span class="at">xintercept=</span><span class="fu">mean</span>(xVar)),</span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">color=</span><span class="st">&quot;red&quot;</span>, <span class="at">linetype=</span><span class="st">&quot;dashed&quot;</span>, <span class="at">size=</span><span class="dv">1</span>) <span class="sc">+</span> </span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">&quot;total prices&quot;</span>) <span class="sc">+</span> <span class="fu">ggtitle</span>(<span class="st">&quot;Histogram for totalprices&quot;</span>)</span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a><span class="fu">histPlot</span>(nutrients, nutrients<span class="sc">$</span>totalprice)</span></code></pre></div>
+<p><img src="data:image/png;base64,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" /><!-- --> In this
+box plot we are looking to determine how much protein is present in the
+vegetarian and non vegetarian meals. We have used
+<code>geom_boxplot()</code> for this scatter plot and added a jitter
+layer using <code>geom_point()</code>. When looking at the protein
+content in the vegetarian and non vegetarian recipes, protein is not
+non-existent in vegetarian meals. This is a common misconception. The
+number of recipes for each category also do not differ much. Also, we
+see that the protein content in non vegetarian meals in generally much
+greater than the protein content in vegetarian meals. Even the outliers
+are only a little more than the median protein content in the non
+vegetarian meals. Something to consider is how many serving size each
+recipe is. This may contribute to a large difference in protein.</p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># boxplot()</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="co"># setting the stage to add layers</span></span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a><span class="co"># how much protein is in vegetarian meals </span></span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>g <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(nutrients, <span class="fu">aes</span>(<span class="at">x =</span> vegetarian, <span class="at">y =</span> Protein_g))</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a><span class="co"># boxplot for Protein by Vegetarian </span></span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>g <span class="sc">+</span> <span class="fu">geom_boxplot</span>() <span class="sc">+</span> </span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">title =</span> <span class="fu">paste0</span>(<span class="st">&quot;Boxplot for Protein (g) vs. Vegetarian Recipes (&quot;</span>, CuisineInfo<span class="sc">$</span>cuisinetxt, <span class="st">&quot; Cuisine)&quot;</span>), <span class="at">x =</span> <span class="st">&quot;Vegetarian Recipe&quot;</span>, <span class="at">y =</span> <span class="st">&quot;Protein (g)&quot;</span>) <span class="sc">+</span></span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color=</span>vegetarian), <span class="at">position=</span><span class="st">&quot;jitter&quot;</span>) </span></code></pre></div>
+<p><img src="data:image/png;base64,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" /><!-- --> In this
+box plot we will be looking at how much protein is in vegetarian meals
+per serving. We have used <code>geom_boxplot()</code> for this scatter
+plot and added a jitter layer using <code>geom_point()</code>. From the
+plot, interestingly enough, when broken down by serving, the protein
+content in vegetarian meals (for some) have a higher protein content
+then the non vegetarian meals. Compared to the boxplot above this is an
+interesting finding.</p>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># boxplot()</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="co"># setting the stage to add layers</span></span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="co"># how much protein is in vegetarian meals per serving to see if there is any difference...</span></span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>g <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(nutrients, <span class="fu">aes</span>(<span class="at">x =</span> vegetarian, <span class="at">y =</span> protein_per_serving))</span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a><span class="co"># boxplot for Protein by Vegetarian </span></span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>g <span class="sc">+</span> <span class="fu">geom_boxplot</span>() <span class="sc">+</span> </span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">title =</span> <span class="fu">paste0</span>(<span class="st">&quot;Boxplot for Protein (g) per Serving vs. Vegetarian Recipes (&quot;</span>, CuisineInfo<span class="sc">$</span>cuisinetxt, <span class="st">&quot; Cuisine)&quot;</span>), <span class="at">x =</span> <span class="st">&quot;Vegetarian Recipe&quot;</span>, <span class="at">y =</span> <span class="st">&quot;Protein (g) / Serving&quot;</span>) <span class="sc">+</span></span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color=</span>vegetarian), <span class="at">position=</span><span class="st">&quot;jitter&quot;</span>)</span></code></pre></div>
+<p><img src="data:image/png;base64,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" /><!-- --> In this
+scatter plot, we tried to see the relationship between protein and
+carbohydrates of a particular cuisine. Here, <code>geom_point()</code>
+was used and we can see that there is <strong>no real pattern</strong>
+to be observed between carbohydrates and protein. A few points may
+indicate increase when either one is increased, but over all protein
+stays low no matter how the carbohydrate content varies.</p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># seperate scatter plot</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Carbohydrates_g vs. Protein_g</span></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a><span class="co"># setting the stage to add layers</span></span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>g <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(nutrients, <span class="fu">aes</span>(<span class="at">x =</span> Carbohydrates_g, <span class="at">y =</span> Protein_g))</span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a><span class="co"># scatter plot with linear regression line for carbs by protein</span></span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a>g <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color=</span>Protein_g), <span class="at">position=</span><span class="st">&quot;jitter&quot;</span>) <span class="sc">+</span></span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Scatterplot for Carbohydrates (g) vs. Protein (g)&quot;</span>, <span class="at">x=</span><span class="st">&quot;Carbohydrates (g)&quot;</span>, <span class="at">y=</span><span class="st">&quot;Protein (g)&quot;</span>) </span></code></pre></div>
+<p><img src="data:image/png;base64,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" /><!-- --> In
+this scatter plot, we have added a layer for the regression line using
+the <code>geom_smooth()</code> function. After seeing the plot, we can
+see that the regression line basically has <strong>No change</strong> in
+protein (g) at any amount of carbohydrates. This is similar to the plot
+above.</p>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co">#setting the stage to add layers</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>g <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(nutrients, <span class="fu">aes</span>(<span class="at">x =</span> Carbohydrates_g, <span class="at">y =</span> Protein_g))</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a><span class="co">#scatter plot with linear regression line for carbs by protein</span></span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>g <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color=</span>Protein_g), <span class="at">position=</span><span class="st">&quot;jitter&quot;</span>) <span class="sc">+</span></span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Carbohydrates (g) vs. Protein (g)&quot;</span>, <span class="at">x=</span><span class="st">&quot;Carbohydrates (g)&quot;</span>, <span class="at">y=</span><span class="st">&quot;Protein (g)&quot;</span>) <span class="sc">+</span> </span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_smooth</span>(<span class="at">method =</span> lm) </span></code></pre></div>
+<p><img src="data:image/png;base64,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" /><!-- --> #
+Wrap up</p>
+<!-- Need to write the summary in brief -->
+
+<p>To summarize everything that we did in this vignette please see the
+following:</p>
+<ul>
+<li><p>Built custom functions to interact with some of the Spoonacular
+Food and Recipe API endpoints like ComplexSearch and
+findByNutrients</p></li>
+<li><p>Retrieved some of the data based on different user
+modifications</p></li>
+<li><p>Did exploratory data analysis (EDA):</p>
+<ul>
+<li><p>Using contingency tables</p></li>
+<li><p>Numerical summaries like mean, median, min, max, standard
+standard deviaiton</p></li>
+<li><p>Data visualization methods like plotting – bar plot, box plot,
+histogram, scatter plot, scatter plots with linear models
+overlayed.</p></li>
+</ul></li>
+</ul>
+<p>Some interesting findings for our specific vingette examples:</p>
+<ul>
+<li><p>Some vegetarian recipes are vegan as well</p></li>
+<li><p>Most of the unhealthy food recipes are from the
+<strong>Foodista</strong> source</p></li>
+<li><p>Recipes suggested by <strong>Foodista</strong> has the
+<strong>maximum number</strong> of <strong>expensive</strong> recipes,
+but also suggests <strong>maximum number</strong> of
+<strong>inexpensive</strong> recipes</p></li>
+<li><p><strong>Cinnamon French Toast Sticks</strong> has a higher
+protein content than a non vegetarian meals like the <strong>Turkey
+Burgers with Slaw</strong>, even though it is a vegetarian recipe. This
+is surprising, but also makes sense due to the high protein content in
+eggs</p></li>
+<li><p>It can be seen that the number of <strong>American</strong>
+cuisine recipes are much <strong>higher</strong> in comparison to
+<strong>Chinese</strong> and <strong>Latin American</strong> cuisines
+for our vignette for the recipes containing fruit.</p></li>
+<li><p>The protein content in non vegetarian meals in generally much
+greater than the protein content in vegetarian meals as
+expected</p></li>
+<li><p>When broken down by serving, the protein content in vegetarian
+meals (for some) have a higher protein content then the non vegetarian
+meals</p></li>
+<li><p>There is <strong>no real pattern</strong> to be observed between
+carbohydrates and protein</p></li>
+<li><p>The regression line basically has <strong>No change</strong> in
+protein (g) at any amount of carbohydrates, confirming out plot that is
+only a scattet plot between protein and carbohydrates</p></li>
+</ul>
+<p>We hope this vignette will help the user to interact with spoonacular
+API and do the required exploratory analysis.</p>
+
+</body>
+</html>
