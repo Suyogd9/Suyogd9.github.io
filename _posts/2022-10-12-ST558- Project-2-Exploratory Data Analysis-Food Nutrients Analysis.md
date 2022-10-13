@@ -37,7 +37,7 @@ could be used as categorical variables to produce a good contingency table or **
 
 We spent a lot of time finalizing the API endpoints because we didn't focus on reading the documentation and instead focused on reading and analyzing API calls to various endpoints and then deciding. In the future, I plan to thoroughly **read the API documentation to save time spent on trial and error**. In addition, I will keep a separate **list of categorical and quantitative variables** to make plotting easier and faster. As previously stated, we were both attempting to use the main branch for commits, which resulted in multiple merge conflicts. In the future, we will use **different branches** to commit our changes and raise a pull request to merge it with the main branch, which will **make teamwork easier**.
 
-[Link to HTML document of the project 2](https://suyogd9.github.io/README.html)
+[Link to HTML document of the project 2](https://suyogd9.github.io/README1.html)
 
 [Link to the vignette page of the project 2](https://pages.github.ncsu.edu/sdharma2/ST558_Project_2_C/)
 
