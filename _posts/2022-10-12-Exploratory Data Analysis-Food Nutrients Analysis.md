@@ -40,3 +40,5 @@ We spent a lot of time finalizing the API endpoints because we didn't focus on r
 [Link to HTML document of the project 2](https://suyogd9.github.io/README.html)
 
 [Link to the vignette page of the project 2](https://pages.github.ncsu.edu/sdharma2/ST558_Project_2_C/)
+
+[Link to Project 2 github repo](https://github.ncsu.edu/sdharma2/ST558_Project_2_C)
