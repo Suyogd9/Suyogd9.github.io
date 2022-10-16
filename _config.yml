@@ -28,7 +28,7 @@ footer-hover-col: "#0085A1"
 #########################################################################################
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
 #########################################################################################
-theme: "jekyll-theme-midnight"
+theme: jekyll-theme-hacker
 
 rss: rss
 
