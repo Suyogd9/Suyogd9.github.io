@@ -1,5 +1,7 @@
 # Why is EDA important?
 
+![EDA](/docs/assets/img/EDA.png)
+
 ## What is EDA and what are the overall goals of the EDA?
 
 Exploratory data analysis is used to thoroughly examine the data. EDA is used to discover what data can **reveal beyond** the formal modeling or hypothesis task 
