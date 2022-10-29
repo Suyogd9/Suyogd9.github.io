@@ -34,3 +34,7 @@ several methods for determining the variable that will help our regression model
 
 ## **Lasso Regression**
   - Lasso regression will **automatically** select useful features while discarding **`useless`** or **`redundant`** features. In Lasso regression, removing a feature causes its coefficient to **equal** 0.  The concept of using Lasso regression for feature selection is thus very straightforward, we fit a Lasso regression on a scaled version of our dataset and we only take into account those features that have a coefficient **`different from 0`**. To achieve the desired Lasso regression, we must first tune the **hyperparameter**.  That will enable us to quickly identify useful features and **eliminate** unnecessary ones.
+
+# Choosing a method for variable selection
+
+There is no hard and fast rule that you must use the methods specified above or the following sequence of methods to select the features. It is entirely dependent on the number of variables under **`consideration`**, **`collinearity of the variables`**, **`ease of use`**, **`reproducibility`**, and **`improved generalization`**.
