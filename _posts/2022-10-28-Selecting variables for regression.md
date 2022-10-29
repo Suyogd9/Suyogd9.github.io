@@ -25,13 +25,13 @@ several methods for determining the variable that will help our regression model
       
 ## Stepwise Procedures
 
-### **Backward Elimination**
+### Backward Elimination
    - In the first step of backward elimination, we **`include`** all predictors and continue to remove the one with the **highest p-value** (>.05 the threshold limit). It will produce the final set of features that are **significant** enough to predict the outcome with the **`desired accuracy after`** a few iterations.
    
-### **Forward selection**
+### Forward selection
   - In forward selection, we simply keep adding features. We **`do not remove`** the previously added feature. We only add features that **improve** the overall model fit in each iteration.
 
-### **Stepwise regression** 
+### Stepwise regression
   - The Stepwise regression technique begins by **fitting** the model with each individual predictor and determining which has the **lowest p-value**. Then choose that variable, and then fit the model using the two variables that we already chose in the previous step, one by one. Again, we choose the one with the lowest p-value. Keep in mind that by including the new variable, the **impact** of the **`previously selected`** variable in the previous step should remain **significant**. We repeat this process until we find a **combination** with a p-value less than.05.
 
 ## **Lasso Regression**
