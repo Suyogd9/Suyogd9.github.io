@@ -38,3 +38,9 @@ several methods for determining the variable that will help our regression model
 # Choosing a method for variable selection
 
 There is no hard and fast rule that you must use the methods specified above or the following sequence of methods to select the features. It is entirely dependent on the number of variables under **`consideration`**, **`collinearity of the variables`**, **`ease of use`**, **`reproducibility`**, and **`improved generalization`**.
+
+- When there are many variables to consider, I use **`forward selection`** to determine the **best** feature. This is because it starts with null variables and considers only the variables that are useful, **avoiding** the need to consider the entire model.
+- I use **`backward selection`** because it takes into account all of the effects of all variables at the same time. It aids us in comprehending **`collinearity`**.
+- Except when there are **more** number of features than events, I favor using **`backward selection`**. Otherwise, we can use **`forward selection`**.
+- The models are **`simple to understand`**, **`straightforward`** to use, and gives a **`reproducible and objective`** way to reduce the number of predictors when compared to manually selecting variables when we use **`stepwise regression`**.
+- I like to use **`lasso regularization`** for feature selection since it **prevents overfitting** and may be used when there are more features than data. **`Inference and fitting`** are **quick**, and it **automatically** chooses the better features.
