@@ -34,7 +34,7 @@ several methods for determining the variable that will help our regression model
 ### Stepwise regression
   - The Stepwise regression technique begins by **fitting** the model with each individual predictor and determining which has the **lowest p-value**. Then choose that variable, and then fit the model using the two variables that we already chose in the previous step, one by one. Again, we choose the one with the lowest p-value. Keep in mind that by including the new variable, the **impact** of the **`previously selected`** variable in the previous step should remain **significant**. We repeat this process until we find a **combination** with a p-value less than.05.
 
-## **Lasso Regression**
+### Lasso Regression
   - Lasso regression will **automatically** select useful features while discarding **`useless`** or **`redundant`** features. In Lasso regression, removing a feature causes its coefficient to **equal** 0.  The concept of using Lasso regression for feature selection is thus very straightforward, we fit a Lasso regression on a scaled version of our dataset and we only take into account those features that have a coefficient **`different from 0`**. To achieve the desired Lasso regression, we must first tune the **hyperparameter**.  That will enable us to quickly identify useful features and **eliminate** unnecessary ones.
 
 # **Choosing a method for variable selection**
