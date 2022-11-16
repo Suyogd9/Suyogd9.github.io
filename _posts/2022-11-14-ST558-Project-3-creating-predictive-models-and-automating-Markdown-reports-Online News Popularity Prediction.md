@@ -16,13 +16,13 @@ The goal of this report is to create and compare predictive models using [Online
 
 - I could have also added a few interaction terms or polynomials terms to my models while training them in order to get better results. 
 
-## what was the most difficult part for you?
+## What was the most difficult part for you?
 
 - Inorder to get good predictions, selecting good predictors is really important. It was really difficult to come up with a way that can give me best predictors to fit my model. We had to select best predictors for our model from the 61 variables that are available in the data frame. We explored many techniques and decided to move ahead by using `regsubsets()` for variable selection.
 - **`Automation`** was another diffidult part where in we had to generate multiple .md files for different data channel using the same render function. Also, rendering was taking long time and if we did simple mistake in the content writing we need to render it again.
 - Finally, deciding on an `evaluation metric` was a difficult task because **`Rsquared`** value was too low to compare different models and **`RMSE`** value was too high, and I am not sure if we are using the correct metric for evaluation. However, because the response variable was **count** data, we were unable to find a better evaluation metric and are currently investigating different evaluation metrics for count data.   
 
-## what are your big take-aways from this project?
+## What are your big take-aways from this project?
 
 - **`Exploratory Data Analysis`** is critical in determining which variables can be used while fitting the model.
 - I discovered **`regsubsets()`** which is extremely useful in determining important predictors required for fitting a model when we have a large number of variables.
