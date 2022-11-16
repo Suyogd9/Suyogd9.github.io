@@ -26,3 +26,6 @@ The goal of this report is to create and compare predictive models using [Online
 - I discovered **`regsubsets()`** which is extremely useful in determining important predictors required for fitting a model when we have a large number of variables.
 - **`Automation`** is very important because it allows you to repeat the steps on different subsets of the dataset without having to code separately for each subset.
 - One should always be on the lookout for **`better ways`** to do something. For example, even if you find one method for determining the best predictors for a model, you should keep looking for other methods or libraries that may provide a **better** solution.
+
+[Link to the vignette page of the project 3](https://suyogd9.github.io/ST558-Project-3/)
+[Link to Project 3 github repo](https://github.com/Suyogd9/ST558-Project-3)
