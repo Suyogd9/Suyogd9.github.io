@@ -18,6 +18,11 @@ The goal of this report is to create and compare predictive models using [Online
 
 - Inorder to get good predictions, selecting good predictors is really important. It was really difficult to come up with a way that can give me best predictors to fit my model. We had to select best predictors for our model from the 61 variables that are available in the data frame. We explored many techniques and decided to move ahead by using `regsubsets()` for variable selection.
 - **`Automation`** was another diffidult part where in we had to generate multiple .md files for different data channel using the same render function. Also, rendering was taking long time and if we did simple mistake in the content writing we need to render it again.
-- Lastly, deciding the evaluation metric was a big task as Rsquared value was pretty low to compare different models ad RMSE value was very high and I am not pretty sure if we are using right metric for evaluation. But as the response variable was count data, we could not find any better evaluation metric and still working on exploring different evaluation metrics for count data.   
+- Finally, deciding on an `evaluation metric` was a difficult task because **`Rsquared`** value was too low to compare different models and **`RMSE`** value was too high, and I am not sure if we are using the correct metric for evaluation. However, because the response variable was **count** data, we were unable to find a better evaluation metric and are currently investigating different evaluation metrics for count data.   
 
 ## what are your big take-aways from this project?
+
+- **`Exploratory Data Analysis`** is critical in determining which variables can be used while fitting the model.
+- I discovered **`regsubsets()`** which is extremely useful in determining important predictors required for fitting a model when we have a large number of variables.
+- **`Automation`** is very important because it allows you to repeat the steps on different subsets of the dataset without having to code separately for each subset.
+- One should always be on the lookout for **`better ways`** to do something. For example, even if you find one method for determining the best predictors for a model, you should keep looking for other methods or libraries that may provide a **better** solution.
